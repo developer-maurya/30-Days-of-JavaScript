@@ -44,4 +44,24 @@ function expect(val) {
         }
     };
 }
+// day 4
+function createCounter(init) {
+    let count = init;  // current value store karega
 
+    return {
+        increment: function() {
+            count++;
+            return count;
+        },
+
+        decrement: function() {
+            count--;
+            return count;
+        },
+
+        reset: function() {
+            count = init;
+            return count;
+        }
+    };
+}
