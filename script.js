@@ -89,4 +89,6 @@ function filter(arr, fn) {
 
     return result;
 }
+// day 7
+
 
