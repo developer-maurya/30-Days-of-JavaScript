@@ -100,3 +100,4 @@ function reduce(nums, fn, init) {
     return result;
 }
 
+// day 8
