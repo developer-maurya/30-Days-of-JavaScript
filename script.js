@@ -116,3 +116,4 @@ var compose = function(functions) {
         return x;
     };
 };
+// day 10
