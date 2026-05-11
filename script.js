@@ -130,3 +130,17 @@ var cancellable = function(fn, args, t) {
 };
 
 // day 11
+var once = function(fn) {
+
+    let called = false;
+
+    return function(...args) {
+
+        if (!called) {
+            called = true;
+            return fn(...args);
+        }
+
+        return undefined;
+    };
+};
