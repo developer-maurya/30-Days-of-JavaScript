@@ -145,3 +145,6 @@ var once = function(fn) {
     };
 };
 // day 12
+var argumentsLength = function(...args) {
+    return args.length;
+};
