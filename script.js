@@ -148,3 +148,5 @@ var once = function(fn) {
 var argumentsLength = function(...args) {
     return args.length;
 };
+
+// day 13
