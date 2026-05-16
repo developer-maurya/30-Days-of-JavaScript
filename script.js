@@ -214,3 +214,17 @@ class TimeLimitedCache {
     }
 }
 // day 16
+var cancellable = function(fn, args, t) {
+
+    fn(...args);
+
+    const intervalId = setInterval(() => {
+        fn(...args);
+    }, t);
+
+    const cancelFn = function() {
+        clearInterval(intervalId);
+    };
+
+    return cancelFn;
+};
