@@ -229,3 +229,14 @@ var cancellable = function(fn, args, t) {
     return cancelFn;
 };
 // day 17
+var debounce = function(fn, t) {
+    let timeoutId;
+
+    return function(...args) {
+        clearTimeout(timeoutId);
+
+        timeoutId = setTimeout(() => {
+            fn(...args);
+        }, t);
+    };
+};
