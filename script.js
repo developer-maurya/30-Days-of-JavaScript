@@ -240,3 +240,5 @@ var debounce = function(fn, t) {
         }, t);
     };
 };
+ 
+// day 18
