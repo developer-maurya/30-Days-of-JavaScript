@@ -263,3 +263,5 @@ var promiseAll = function(functions) {
         });
     });
 };
+
+// day 19
